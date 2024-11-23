@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Kumar Singh | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #fff;
+            overflow-x: hidden;
+            position: relative;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #1f2937;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #10b981;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #fff;
+            font-weight: 500;
+            position: relative;
+        }
+        header nav a:hover {
+            color: #10b981;
+        }
+        .hero {
+            text-align: center;
+            padding: 150px 20px;
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+        .hero .cta {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #10b981;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+        .hero .cta:hover {
+            background: #059669;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        section {
+            padding: 80px 20px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .skills, .experience, .portfolio, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            background: #1f2937;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+        /* Subtle Cursor Gradient Effect */
+        .gradient-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle at 0 0, rgba(100, 255, 218, 0.15), transparent 60%);
+            z-index: 999;
+            mix-blend-mode: overlay;
+            transition: background 0.1s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ritesh Kumar Singh</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Hello, I'm Ritesh</h1>
+    <p>Technical Lead | Software Developer | Innovator</p>
+    <a class="cta" href="#contact">Contact Me</a>
+</div>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I'm an experienced Technical Lead and Software Developer passionate about solving complex problems and delivering impactful solutions. I specialize in MERN stack, Flask, automation tools, and agile methodologies, creating scalable systems and leading teams to success.</p>
+</section>
+
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">MERN Stack</div>
+        <div class="card">AWS & Docker</div>
+        <div class="card">Agile Leadership</div>
+        <div class="card">Selenium & Appium</div>
+        <div class="card">RESTful APIs</div>
+        <div class="card">Client Management</div>
+    </div>
+</section>
+
+<section id="experience" class="container">
+    <h2>Experience</h2>
+    <div class="experience">
+        <div class="card">
+            <h3>Technical Lead</h3>
+            <p>Supporthives Technology</p>
+            <p>Aug 2023 - Present</p>
+        </div>
+        <div class="card">
+            <h3>Senior Software Developer</h3>
+            <p>Supporthives Technology</p>
+            <p>Oct 2022 - Aug 2023</p>
+        </div>
+        <div class="card">
+            <h3>Software Developer</h3>
+            <p>Supporthives Technology</p>
+            <p>Mar 2021 - Sep 2022</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="container">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="card">
+            <h3>Learning Platform</h3>
+            <p>Enhanced education access for underprivileged children during the pandemic.</p>
+        </div>
+        <div class="card">
+            <h3>InsureTech Project</h3>
+            <p>Optimized API performance, accelerating insurance processes.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:hi@riteshksingh.com">hi@riteshksingh.com</a></p>
+    <p>Phone: +91 8797764543</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/riteshksingh26" target="_blank">linkedin.com/in/riteshksingh26</a></p>
+</section>
+
+<footer>
+    <p>© 2024 Ritesh Kumar Singh | All Rights Reserved</p>
+</footer>
+
+<div class="gradient-overlay" id="gradientOverlay"></div>
+
+<script>
+    // Update the gradient effect position across the entire website
+    const gradientOverlay = document.getElementById('gradientOverlay');
+
+    document.addEventListener('mousemove', (e) => {
+        gradientOverlay.style.background = `radial-gradient(circle at ${e.pageX}px ${e.pageY}px, rgba(100, 255, 218, 0.15), transparent 60%)`;
+    });
+</script>
+
+</body>
+</html>
